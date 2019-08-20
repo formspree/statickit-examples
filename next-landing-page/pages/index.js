@@ -1,11 +1,22 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
+import { useForm } from "@statickit/react";
 
 const OptInForm = () => {
+  const [state, submit] = useForm("e9ce3a3a3a35");
+
+  if (state.succeeded) {
+    return (
+      <p className="pb-3 font-bold text-gray-800 text-lg">
+        Thank you for signing up!
+      </p>
+    );
+  }
+
   return (
-    <form className="text-gray-800 text-lg">
-      <p className="pb-3 font-bold">
+    <form onSubmit={submit}>
+      <p className="pb-3 font-bold text-gray-800 text-lg">
         Sign up to be notified when we launch.
       </p>
 
@@ -20,6 +31,7 @@ const OptInForm = () => {
           name="email"
           className="flex-grow mr-3 mb-3 p-3 rounded-lg bg-gray-200 text-gray-700 text-lg border border-gray-200 focus:outline-none focus:border-gray-500 focus:bg-white"
           placeholder="Your email address"
+          required
         />
 
         <button
@@ -31,7 +43,7 @@ const OptInForm = () => {
       </div>
     </form>
   );
-}
+};
 
 const Home = () => (
   <div>
