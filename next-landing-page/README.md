@@ -9,7 +9,7 @@ A simple pre-launch landing page built with Next.js and StaticKit.
 To run this example:
 
 ```bash
-git clone https://github.com/levelhq/statickit-examples.git
+git clone https://github.com/unstacked/statickit-examples.git
 cd statickit-examples/next-landing-page
 npm install
 npm run dev
