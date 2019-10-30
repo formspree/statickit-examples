@@ -1,0 +1,24 @@
+{
+  "forms": {
+    "zapier": {
+      "name": "Zapier",
+      "fields": {},
+      "actions": {}
+    },
+    "next-mdx": {
+      "name": "Next MDX",
+      "fields": {},
+      "actions": {}
+    },
+    "next-landing-page": {
+      "name": "Next Landing Page",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        }
+      },
+      "actions": {}
+    }
+  }
+}
