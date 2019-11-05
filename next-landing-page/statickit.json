@@ -1,0 +1,14 @@
+{
+  "forms": {
+    "opt-in-form": {
+      "name": "Opt In Form",
+      "fields": {
+        "email": {
+          "type": "email",
+          "prettyName": "Email address",
+          "required": true
+        }
+      }
+    }
+  }
+}

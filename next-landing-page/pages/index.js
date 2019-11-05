@@ -3,7 +3,10 @@ import Head from "next/head";
 import { useForm } from "@statickit/react";
 
 const OptInForm = () => {
-  const [state, submit] = useForm("e9ce3a3a3a35");
+  const [state, submit] = useForm({
+    site: "c7cf79156606",
+    form: "opt-in-form"
+  });
 
   if (state.succeeded) {
     return (
