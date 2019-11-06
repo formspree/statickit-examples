@@ -1,0 +1,13 @@
+{
+  "forms": {
+    "fiddle-demo": {
+      "name": "Fiddle Demo",
+      "fields": {
+        "email": {
+          "type": "email",
+          "required": true
+        }
+      }
+    }
+  }
+}
