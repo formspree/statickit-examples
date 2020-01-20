@@ -1,7 +1,7 @@
 {
   "forms": {
-    "opt-in-form": {
-      "name": "Opt In Form",
+    "optInForm": {
+      "name": "Opt-In Form",
       "fields": {
         "email": {
           "type": "email",

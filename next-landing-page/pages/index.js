@@ -3,10 +3,7 @@ import Head from "next/head";
 import { useForm } from "@statickit/react";
 
 const OptInForm = () => {
-  const [state, submit] = useForm({
-    site: "c7cf79156606",
-    form: "opt-in-form"
-  });
+  const [state, submit] = useForm("optInForm");
 
   if (state.succeeded) {
     return (
@@ -39,6 +36,7 @@ const OptInForm = () => {
         <button
           type="submit"
           className="mb-3 px-5 py-3 rounded-lg border border-purple-700 bg-purple-700 text-lg font-bold text-white"
+          disabled={state.submitting}
         >
           Notify me
         </button>
